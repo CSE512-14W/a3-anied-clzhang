@@ -8,12 +8,14 @@ Khoisan,African,,,,,,,2,Khoisan African Mothertongue
 Amerindian,Mothertongue,Algic,Na-Dene,Meso-American,South-American,,,1,Amerindian Mothertongue    
 Algic,Amerindian,,,,,,,2,Algic Amerindian Mothertongue   
 Na-Dene,Amerindian,,,,,,,2,Na-Dene Amerindian Mothertongue   
-Meso-American,Amerindian,Uto-Aztecan,Mayan,Oto-Manguean,Chibchan,,,2,Meso-American Amerindian Mothertongue   
-Uto-Aztecan,Meso-American,,,,,,,3,Uto-Aztecan Meso-American Amerindian Mothertongue  
+Meso-American,Amerindian,Nahuatl,Mayan,,,,,2,Meso-American Amerindian Mothertongue   
+Nahuatl,Meso-American,,,,,,,3,Nahuatl Meso-American Amerindian Mothertongue  
 Mayan,Meso-American,,,,,,,3,Mayan Meso-American Amerindian Mothertongue  
-Oto-Manguean,Meso-American,,,,,,,3,Oto-Manguean Meso-American Amerindian Mothertongue  
-Chibchan,Meso-American,,,,,,,3,Chibchan Meso-American Amerindian Mothertongue  
-South-American,Amerindian,,,,,,,2,South-American Amerindian Mothertongue   
+South-American,Amerindian,Quechuan,Guarani,Aymara,Mapudungun,,,2,South-American Amerindian Mothertongue   
+Quechuan,South-American,,,,,,,3,Quechuan South-American Amerindian Mothertongue   
+Guarani,South-American,,,,,,,3,Guarani South-American Amerindian Mothertongue   
+Aymara,South-American,,,,,,,3,Aymara South-American Amerindian Mothertongue   
+Mapudungun,South-American,,,,,,,3,Mapudungun South-American Amerindian Mothertongue   
 Borean,Mothertongue,Afroasiatic,Indo-European,Ural-Altaic,Sino-Caucasian,Austric,,1,Borean Mothertongue    
 Afroasiatic,Borean,Semitic,Berber,Chadic,Cushitic,,,2,Afroasiatic Borean Mothertongue   
 Semitic,Afroasiatic,Arabic,Jewish,,,,,3,Semitic Afroasiatic Borean Mothertongue  
@@ -39,7 +41,13 @@ Scandinavian,Germanic,,,,,,,5,Scandinavian Germanic Centum Indo-European Borean 
 Celtic,Centum,,,,,,,4,Celtic Centum Indo-European Borean Mothertongue 
 Satem,Indo-European,Iranian,Indo-Aryan,Slavic,Baltic,Albanian,Armenian,3,Satem Indo-European Borean Mothertongue  
 Iranian,Satem,,,,,,,4,Iranian Satem Indo-European Borean Mothertongue 
-Indo-Aryan,Satem,,,,,,,4,Indo-Aryan Satem Indo-European Borean Mothertongue 
+Indo-Aryan,Satem,Central-Indoaryan,Northern-Indoaryan,NW-Indoaryan,Eastern-Indoaryan,Southern-Indoaryan,Insular-Indoaryan,4,Indo-Aryan Satem Indo-European Borean Mothertongue 
+Central-Indoaryan,Indo-Aryan,,,,,,,5,Central-Indoaryan Indo-Aryan Satem Indo-European Borean Mothertongue 
+North-Indoaryan,Indo-Aryan,,,,,,,5,North-Indoaryan Indo-Aryan Satem Indo-European Borean Mothertongue 
+West-Indoaryan,Indo-Aryan,,,,,,,5,West-Indoaryan Indo-Aryan Satem Indo-European Borean Mothertongue 
+East-Indoaryan,Indo-Aryan,,,,,,,5,East-Indoaryan Indo-Aryan Satem Indo-European Borean Mothertongue 
+South-Indoaryan,Indo-Aryan,,,,,,,5,South-Indoaryan Indo-Aryan Satem Indo-European Borean Mothertongue 
+Insular-Indoaryan,Indo-Aryan,,,,,,,5,Insular-Indoaryan Indo-Aryan Satem Indo-European Borean Mothertongue 
 Slavic,Satem,East-Slavic,South-Slavic,West-Slavic,,,,4,Slavic Satem Indo-European Borean Mothertongue 
 East-Slavic,Slavic,,,,,,,5,East-Slavic Slavic Satem Indo-European Borean Mothertongue 
 South-Slavic,Slavic,,,,,,,5,South-Slavic Slavic Satem Indo-European Borean Mothertongue 
@@ -58,9 +66,10 @@ Mongolic,Altaic,,,,,,,4,Mongolic Altaic Ural-Altaic Borean Mothertongue
 Tungusic,Altaic,,,,,,,4,Tungusic Altaic Ural-Altaic Borean Mothertongue 
 Korean,Altaic,,,,,,,4,Korean Altaic Ural-Altaic Borean Mothertongue 
 Japonic,Altaic,,,,,,,4,Japonic Altaic Ural-Altaic Borean Mothertongue 
-Uralic,Ural-Altaic,Finnic,Hungarian,,,,,3,Uralic Ural-Altaic Borean Mothertongue  
+Uralic,Ural-Altaic,Finnic,Hungarian,Samoyedic,,,,3,Uralic Ural-Altaic Borean Mothertongue  
 Finnic,Uralic,,,,,,,4,Finnic Uralic Ural-Altaic Borean Mothertongue  
 Hungarian,Uralic,,,,,,,4,Hungarian Uralic Ural-Altaic Borean Mothertongue  
+Samoyedic,Uralic,,,,,,,4,Samoyedic Uralic Ural-Altaic Borean Mothertongue  
 Paleo-Siberian,Ural-Altaic,Chukotian,Aleutian,,,,,3,Paleo-Siberian Ural-Altaic Borean Mothertongue  
 Chukotian,Paleo-Siberian,,,,,,,4,Chukotian Paleo-Siberian Ural-Altaic Borean Mothertongue 
 Aleutian,Paleo-Siberian,,,,,,,4,Aleutian Paleo-Siberian Ural-Altaic Borean Mothertongue 
