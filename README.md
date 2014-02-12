@@ -13,18 +13,15 @@ Visual Language Families. A language family is a group of languages related thro
 
 ## Running Instructions
 
-Go to: http://homes.cs.washington.edu/~anied/cse512/a3-anied-clzhang.html
-
-_or_
-
-Download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
-
+Static Version at time of assignment submission<br />
+  http://cse512-14w.github.io/a3-anied-clzhang/
+  
+Live/Updated Version:<br />
+  http://homes.cs.washington.edu/~anied/cse512/a3-anied-clzhang.html
 
 ## Story Board
 
 https://github.com/CSE512-14W/a3-anied-clzhang/blob/gh-pages/a3-anied-clzhang.pdf
-
-
 
 ### Changes between Storyboard and the Final Implementation
 
