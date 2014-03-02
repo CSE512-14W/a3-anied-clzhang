@@ -1,14 +1,17 @@
+<!DOCTYPE html>
+
 <html>
 
 <!--
   Congle Zhang and Conrad Nied's (The Cons) CSE512 Assignment 3
   Designed 2014-01-29 to 2014-02-10
+
+  Touch ups until 2014-03-02
 -->
 
 <head>
 <title> World Language Family Map </title>
 <style>
-    /*@import url(d3/media/style.css);*/
 
     path {
         stroke: #000;
@@ -48,16 +51,21 @@
         top: 0px;
     }
 
-    div.div1 {
+    div.Sunburst {
         position: absolute;
         left: 0px;
         top: 0px;
     }
+
 </style>
 <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+<!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+<!-- <script src="fisheye.js" charset="utf-8"></script> -->
 
 <script language="JavaScript" type="text/javascript">
 var dataset;
+var parents = [];
+var colours = [];
 var tooltip;
 
 var width = 600,
@@ -71,15 +79,38 @@ var width = 600,
 var arc;
 var partition;
 var nodes;
-//var countryname2node={};
-//var countryname2ancestors={};
 var wheelwidth = 600;
 
 var wheelpaths;
 var wheeltexts;
+
+// var fisheye = d3.fisheye.circular()
+//     .focus([360, 90])
+//     .radius(100);
+
+// Start the window
 window.onload = function () {
-    d3.xml("a3-anied-clzhang.svg", "image/svg+xml", function(xml) {
-        document.body.appendChild(xml.documentElement);
+    d3.text("a3-anied-clzhang.svg", function(error, svgxml) {
+         if (error) {console.log(error); return;}
+
+        d3.select(".MapContainer")
+            .html(svgxml);
+
+        // // Set up fisheye zooming
+        // var path = d3.select(".MapContainer").selectAll("path")
+        //     .attr("d", fishline);
+
+        // d3.select(".MapContainer").on("mousemove", function() {
+        //     fisheye.focus(d3.mouse(this));
+        //     path.attr("d", fishline);
+        // });
+
+        // function fishline(d) {
+        //     return line(d.map(function(d) {
+        //         d = fisheye({x: d[0], y: d[1]});
+        //         return [d.x, d.y];
+        //     }));
+        // }
 
         // Set the tooltip
         tooltip = d3.select("body")
@@ -97,10 +128,10 @@ window.onload = function () {
         // Load the data
         txt = d3.text("a3-anied-clzhang.csv", function (datasetText) {
             dataset = d3.csv.parseRows(datasetText);
+            setCountryInfo();
             initializeCountries();
             setCountryClasses();
             drawWheel();
-    //        drawTable();
         });
 });
 
@@ -111,7 +142,7 @@ function refillCountries() {
         .style("fill", function () {
             thisclass = d3.select(this).attr("class").split(" ")[0];
 
-            txt = d3.selectAll("text.inside_" + thisclass)
+            txt = d3.selectAll("text.wheel_text_" + thisclass)
 
             for(var i = 0; i < txt[0].length; i++) {
                 if(txt[0][i]["style"]["visibility"] != "hidden") {
@@ -119,32 +150,31 @@ function refillCountries() {
                 }
             }
             return "white"
-            // console.log(txt);
-            // if(txt[0][0] == null || txt.style("visibility") == "hidden") {
-            //     return "white";
-            // } else {
-            //     return mapcolour(thisclass);
-            // }
         })
 }
 
 
 function highlight(name) {
-    color = str2rgb(name || "")
-
     d3.selectAll(".Mothertongue")
             .style("fill", "rgb(255,255,255)");
 
-    d3.selectAll("." + name).style("fill", color);
+    d3.selectAll("." + name).style("fill", mapcolour(name));
+}
+
+function wheelHighlight(name) {
+    d3.selectAll(".wheel_part").style("opacity",0.1);
+
+    // Change opacity up the tree
+    while(name != null) {
+        d3.selectAll(".wheel_" + name).style("opacity",1);
+        d3.selectAll(".wheel_text_" + name).style("opacity",1);
+
+        name = parents[name];
+    }
 }
 
 function initializeCountries() {
     // Set the language java events
-//    d3.select(".div2")
-//            .attr("position", "absolute")
-//            .attr("left", wheelwidth+"px")
-//            .attr("top","100px");
-
 
     countries = d3.select("body").selectAll(".zone")
             .style("fill", function () {
@@ -155,16 +185,12 @@ function initializeCountries() {
             .on('mouseover', function (d) {
                 country = d3.select(this);
                 thisclass = country.attr("class").split(" ")[0];
-                // if(thisclass == "Ocean") {
-                    // refillCountries();
-                // } else {
-                    tooltip.style("visibility", "visible")
-                            .text(country.attr("title"));
 
-                    d3.selectAll(".wheel_part").style("opacity",0.1);
-                    d3.selectAll(".inside_" + thisclass).style("opacity",1);
-                    highlight(thisclass);
-                // }
+                tooltip.style("visibility", "visible")
+                        .text(country.attr("title"));
+
+                highlight(thisclass);
+                wheelHighlight(thisclass);
             })
             .on("mousemove", function (d) {
                 // thisclass = d3.select(this).attr("class").split(" ")[0];
@@ -180,21 +206,7 @@ function initializeCountries() {
                 refillCountries();
             })
             .on('click', function (d) {
-//                country = d3.select(this);
-//                opacity = country.style("opacity");
-//                if (opacity == "1")
-//                    country.style("opacity", "0");
-//                else
-//                    country.style("opacity", "1");
-                thisclass = d3.select(this).attr("class").split(" ")[0];
-                var name = thisclass;
-
-//                path0 = d3.select(".wheel_"+name);
-
-//                clickWheel(countryname2node[name],wheelpaths,wheeltexts);
-
-//                path_wheel.style("opacity","0");
-
+                // nothing
             })
             .style({'stroke-width': '0.25'})
             .selectAll("path")
@@ -205,15 +217,24 @@ function mapcolour(s) {
 //                console.log(this.id);
     if (s == "Uninhabited") {
         return "white";
-    // } else if (s == "Ocean") {
-        // return "#8080FF";
+    } else if (colours[s] != null) {
+        return colours[s];
     } else {
         return str2rgb(s || "");
     }
 }
-function setCountryClasses() {
 
-    // Set country titles
+function setCountryInfo() {
+    for (var i = 1; i < dataset.length; i++) {
+        var countryname = dataset[i][0];
+        parents[countryname] = dataset[i][1];
+        colours[countryname] = str2rgb(countryname);
+        // i_ = i / dataset.length;
+        // colours[countryname] = d3.hsl(i_ * 360, (i_ * 7) % 10 / 10, (i_ * 7) % 5 / 5);
+    }
+}
+
+function setCountryClasses() {
     for (var i = 1; i < dataset.length; i++) {
         var countryname = dataset[i][0];
         var country = d3.selectAll("." + countryname)
@@ -222,13 +243,11 @@ function setCountryClasses() {
     }
 }
 
-
-
 function drawWheel() {
 
 
     var div = d3.select("body").append("div")
-            .attr("class", "div1");
+            .attr("class", "Sunburst");
 
     div.select("img").remove();
 
@@ -266,10 +285,7 @@ function drawWheel() {
     d3.json("a3-anied-clzhang.json", function (error, json) {
         nodes = partition.nodes({children: json});
         nodes[0].name="Mothertongue";
-//        console.log(nodes[0]);
-//        for(i=0;i<nodes.length;i++){
-//            countryname2node[nodes[i].name]=nodes[i]
-//        }
+
         var path = vis.selectAll("path").data(nodes);
         wheelpaths = path;
         path.enter().append("path")
@@ -278,13 +294,14 @@ function drawWheel() {
                 })
                 .attr("d", arc)
                 .attr("fill-rule", "evenodd")
-                .attr("class",function(d){
-//                    console.log(d);
-                    return ("wheel_part "+"wheel_"+ d.name||"") + " "+ d.inside+"";
+                .attr("class", function (d) {
+                    return ("wheel_part wheel_"+ d.name||"") + "";
                 })
-                //                .style("fill", colour)
-                .style("fill", function (d) {
-                    return str2rgb(d.name || "");
+                .style("fill", function (d, i) {
+                    i_ = i / 100;
+                    if(window.location.hash != "#hashedcolors")
+                        colours[d.name] = d3.hsl(i_ * 360, i * 3.14 % .7 + 0.3, i * 3.14 % .35 / 2 + 0.4);
+                    return mapcolour(d.name);
                 })
                 .on("mouseover",highlightCountry)
                 .on("mouseout", refillCountries)
@@ -295,15 +312,13 @@ function drawWheel() {
         var text = vis.selectAll("text").data(nodes);
         wheeltexts = text;
         var textEnter = text.enter().append("text")
-                .attr("class",function(d){
-                    return "wheel_part "+ d.inside+"";
+                .attr("class", function (d) {
+                    return "wheel_part wheel_text_"+ d.name||"" + "";
                 })
                 .style("fill-opacity", 1)
                 .style("fill", function (d) {
-//                    console.log(d);
-                    return brightness(d3.rgb(str2rgb(d.name || ""))) < 125 ? "#eee" : "#000";
+                    return brightness(mapcolour(d.name)) < 125 ? "#eee" : "#000";
                 })
-//                .style("fill", colour(d))
                 .attr("text-anchor", function (d) {
                     return x(d.x + d.dx / 2) > Math.PI ? "end" : "start";
                 })
@@ -336,88 +351,18 @@ function drawWheel() {
         function highlightCountry(d) {
             highlight(d.name);
         }
-//        function click(d) {
-//            console.log("click", d);
-//            path.transition()
-//                    .duration(duration)
-//                    .attrTween("d", arcTween(d));
-//
-//            // Somewhat of a hack as we rely on arcTween updating the scales.
-//            text.style("visibility", function (e) {
-//                return isParentOf(d, e) ? null : d3.select(this).style("visibility");
-//            })
-//                    .transition()
-//                    .duration(duration)
-//                    .attrTween("text-anchor", function (d) {
-//                        return function () {
-//                            return x(d.x + d.dx / 2) > Math.PI ? "end" : "start";
-//                        };
-//                    })
-//                    .attrTween("transform", function (d) {
-//                        var multiline = (d.name || "").split("-").length > 1;
-//                        return function () {
-//                            var angle = x(d.x + d.dx / 2) * 180 / Math.PI - 90,
-//                                    rotate = angle + (multiline ? -.5 : 0);
-//                            return "rotate(" + rotate + ")translate(" + (y(d.y) + padding) + ")rotate(" + (angle > 90 ? -180 : 0) + ")";
-//                        };
-//                    })
-//                    .style("fill-opacity", function (e) {
-//                        return isParentOf(d, e) ? 1 : 1e-6;
-//                    })
-//                    .each("end", function (e) {
-//                        d3.select(this).style("visibility", isParentOf(d, e) ? null : "hidden");
-//                    });
-//        }
-    });
 
-
-
-
-
-    function colour(d) {
-
-        if (d.children) {
-            // There is a maximum of two children!
-            var colours = d.children.map(colour),
-                    a = d3.hsl(colours[0]),
-                    b = d3.hsl(colours[1]);
-            // L*a*b* might be better here...
-            return d3.hsl((a.h + b.h) / 2, a.s * 1.2, a.l / 1.2);
+        if(window.location.hash != "#hashedcolors") {
+            refillCountries();
         }
-        return d.colour || "#fff";
-    }
-
-    function str2rgb(s) {
-        if (s == "") {
-            return "rgb(255,255,255)";
-        }
-        hash = hashCode(s);
-        r = (hash & 0xFF0000) >> 16;
-        g = (hash & 0x00FF00) >> 8;
-        b = hash & 0x0000FF;
-        return "rgb(" + r + ", " + g + ", " + b + ")";
-    }
-
-    function hashCode(s) {
-        return s.split("").reduce(function (a, b) {
-            a = ((a << 5) - a) + b.charCodeAt(0);
-            return a & a
-        }, 0);
-    }
-
-// Interpolate the scales!
-
-
-
-
-
+    }); // Json Loading
 }
 
 function clickWheel(d,path,text){
-    console.log("click", d);
+    // console.log("click", d);
     path.transition()
-            .duration(duration)
-            .attrTween("d", arcTween(d));
+        .duration(duration)
+        .attrTween("d", arcTween(d));
 
     // Somewhat of a hack as we rely on arcTween updating the scales.
     text.style("visibility", function (e) {
@@ -444,7 +389,8 @@ function clickWheel(d,path,text){
             .each("end", function (e) {
                 d3.select(this).style("visibility", isParentOf(d, e) ? null : "hidden");
             });
-    refillCountries()
+
+    // window.setTimeout(refillCountries(),100);
 }
 
 function arcTween(d) {
@@ -479,7 +425,7 @@ function brightness(rgb) {
 }
 
 
-str2rgb = function (s) {
+function str2rgb (s) {
     hash = hashCode(s);
     r = (hash & 0xFF0000) >> 16;
     g = (hash & 0x00FF00) >> 8;
@@ -487,7 +433,7 @@ str2rgb = function (s) {
     return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
-hashCode = function (s) {
+function hashCode (s) {
     return s.split("").reduce(function (a, b) {
         a = ((a << 5) - a) + b.charCodeAt(0);
         return a & a
@@ -502,7 +448,10 @@ hashCode = function (s) {
         <h2>World Language Family Map</h2>
         <h3>Conrad Nied and Congle Zhang's CSE512 Assignment 3</h3>
         <p>Scroll over languages/countries to focus on particular language.<br/>Click on the language wheel to zoom in language family.</p>
-        <p style="margin:450px"/></p><p>Tested on Chrome and Firefox. Warning: Graphic Intensive, animation may be slow.</p>
+        <p style="margin:450px"/></p><p>Warning: Large amount of graphical objects, animation may be slow.</p>
+    </div>
+
+    <div class="MapContainer">
     </div>
 
 </body>

@@ -1,131 +1,131 @@
 [
 
-{"name":"Paleo-Melanesian","parent":"Mothertongue","colour":"#ebe378","children":[
-	{"name":"Papuan","parent":"Paleo-Melanesian","colour":"#ebe378","children":[],"insideleafs":["Papuan"],"inside":"inside_Papuan","outside":""},
-	{"name":"Aboriginal","parent":"Paleo-Melanesian","colour":"#ebe378","children":[],"insideleafs":["Aboriginal"],"inside":"inside_Aboriginal","outside":""},
-	{"name":"Melanesian","parent":"Paleo-Melanesian","colour":"#ebe378","children":[],"insideleafs":["Melanesian"],"inside":"inside_Melanesian","outside":""}
-	],"insideleafs":["Papuan","Melanesian","Aboriginal"],"inside":"inside_Papuan inside_Melanesian inside_Aboriginal","outside":""},
+{"name":"Paleo-Melanesian","parent":"Mothertongue","children":[
+	{"name":"Papuan","parent":"Paleo-Melanesian","children":[]},
+	{"name":"Melanesian","parent":"Paleo-Melanesian","children":[]},
+	{"name":"Aboriginal","parent":"Paleo-Melanesian","children":[]}
+	]},
 
-{"name":"African","parent":"Mothertongue","colour":"#ebe378","children":[
-	{"name":"Niger-Congo","parent":"African","colour":"#ebe378","children":[
-	{"name":"Bantu","parent":"Niger-Congo","colour":"#ebe378","children":[],"insideleafs":["Bantu"],"inside":"inside_Bantu","outside":""},
-	{"name":"Macro-Niger","parent":"Niger-Congo","colour":"#ebe378","children":[],"insideleafs":["Macro-Niger"],"inside":"inside_Macro-Niger","outside":""}
-	],"insideleafs":["Macro-Niger","Bantu"],"inside":"inside_Macro-Niger inside_Bantu","outside":""},
-	{"name":"Nilo-Saharan","parent":"African","colour":"#ebe378","children":[],"insideleafs":["Nilo-Saharan"],"inside":"inside_Nilo-Saharan","outside":""},
-	{"name":"Khoisan","parent":"African","colour":"#ebe378","children":[],"insideleafs":["Khoisan"],"inside":"inside_Khoisan","outside":""}
-	],"insideleafs":["Nilo-Saharan","Bantu","Macro-Niger","Khoisan"],"inside":"inside_Nilo-Saharan inside_Bantu inside_Macro-Niger inside_Khoisan","outside":""},
+{"name":"African","parent":"Mothertongue","children":[
+	{"name":"Khoisan","parent":"African","children":[]},
+	{"name":"Nilo-Saharan","parent":"African","children":[]},
+	{"name":"Niger-Congo","parent":"African","children":[
+		{"name":"Bantu","parent":"Niger-Congo","children":[]},
+		{"name":"Macro-Niger","parent":"Niger-Congo","children":[]}
+		]}
+	]},
 
-{"name":"Amerindian","parent":"Mothertongue","colour":"#ebe378","children":[
-	{"name":"South-American","parent":"Amerindian","colour":"#ebe378","children":[
-		{"name":"Mapudungun","parent":"South-American","colour":"#ebe378","children":[],"insideleafs":["Mapudungun"],"inside":"inside_Mapudungun","outside":""},
-		{"name":"Guarani","parent":"South-American","colour":"#ebe378","children":[],"insideleafs":["Guarani"],"inside":"inside_Guarani","outside":""},
-		{"name":"Aymara","parent":"South-American","colour":"#ebe378","children":[],"insideleafs":["Aymara"],"inside":"inside_Aymara","outside":""},
-		{"name":"Quechuan","parent":"South-American","colour":"#ebe378","children":[],"insideleafs":["Quechuan"],"inside":"inside_Quechuan","outside":""}
-		],"insideleafs":["Mapudungun","Guarani","Aymara","Quechuan"],"inside":"inside_Mapudungun inside_Guarani inside_Aymara inside_Quechuan","outside":""},
-	{"name":"Algic","parent":"Amerindian","colour":"#ebe378","children":[],"insideleafs":["Algic"],"inside":"inside_Algic","outside":""},
-	{"name":"Na-Dene","parent":"Amerindian","colour":"#ebe378","children":[],"insideleafs":["Na-Dene"],"inside":"inside_Na-Dene","outside":""},
-	{"name":"Meso-American","parent":"Amerindian","colour":"#ebe378","children":[
-		{"name":"Mayan","parent":"Meso-American","colour":"#ebe378","children":[],"insideleafs":["Mayan"],"inside":"inside_Mayan","outside":""},
-		{"name":"Nahuatl","parent":"Meso-American","colour":"#ebe378","children":[],"insideleafs":["Nahuatl"],"inside":"inside_Nahuatl","outside":""}
-		],"insideleafs":["Mayan","Nahuatl"],"inside":"inside_Mayan inside_Nahuatl","outside":""}
-	],"insideleafs":["Mapudungun","Guarani","Aymara","Quechuan","Mayan","Algic","Nahuatl","Na-Dene"],"inside":"inside_Mapudungun inside_Guarani inside_Aymara inside_Quechuan inside_Mayan inside_Algic inside_Nahuatl inside_Na-Dene","outside":""},
+{"name":"Amerindian","parent":"Mothertongue","children":[
+	{"name":"South-American","parent":"Amerindian","children":[
+		{"name":"Mapudungun","parent":"South-American","children":[]},
+		{"name":"Guarani","parent":"South-American","children":[]},
+		{"name":"Aymara","parent":"South-American","children":[]},
+		{"name":"Quechuan","parent":"South-American","children":[]}
+		]},
+	{"name":"Meso-American","parent":"Amerindian","children":[
+		{"name":"Mayan","parent":"Meso-American","children":[]},
+		{"name":"Nahuatl","parent":"Meso-American","children":[]}
+		]},
+	{"name":"Algic","parent":"Amerindian","children":[]},
+	{"name":"Na-Dene","parent":"Amerindian","children":[]}
+	]},
 
-{"name":"Borean","parent":"Mothertongue","colour":"#ebe378","children":[
-	{"name":"Sino-Caucasian","parent":"Borean","colour":"#ebe378","children":[
-		{"name":"Caucasian","parent":"Sino-Caucasian","colour":"#ebe378","children":[],"insideleafs":["Caucasian"],"inside":"inside_Caucasian","outside":""},
-		{"name":"Basque","parent":"Sino-Caucasian","colour":"#ebe378","children":[],"insideleafs":["Basque"],"inside":"inside_Basque","outside":""},
-		{"name":"Sino-Tibetan","parent":"Sino-Caucasian","colour":"#ebe378","children":[
-			{"name":"Sinitic","parent":"Sino-Tibetan","colour":"#ebe378","children":[
-				{"name":"South-Chinese","parent":"Sinitic","colour":"#ebe378","children":[],"insideleafs":["South-Chinese"],"inside":"inside_South-Chinese","outside":""},
-				{"name":"Mandarin","parent":"Sinitic","colour":"#ebe378","children":[],"insideleafs":["Mandarin"],"inside":"inside_Mandarin","outside":""}
-				],"insideleafs":["South-Chinese","Mandarin"],"inside":"inside_South-Chinese inside_Mandarin","outside":""},
-			{"name":"Tibeto-Burman","parent":"Sino-Tibetan","colour":"#ebe378","children":[
-				{"name":"Tibetan","parent":"Tibeto-Burman","colour":"#ebe378","children":[],"insideleafs":["Tibetan"],"inside":"inside_Tibetan","outside":""},
-				{"name":"Burmese","parent":"Tibeto-Burman","colour":"#ebe378","children":[],"insideleafs":["Burmese"],"inside":"inside_Burmese","outside":""}
-				],"insideleafs":["Tibetan","Burmese"],"inside":"inside_Tibetan inside_Burmese","outside":""}
-			],"insideleafs":["South-Chinese","Tibetan","Mandarin","Burmese"],"inside":"inside_South-Chinese inside_Tibetan inside_Mandarin inside_Burmese","outside":""}
-		],"insideleafs":["Caucasian","South-Chinese","Tibetan","Mandarin","Burmese","Basque"],"inside":"inside_Caucasian inside_South-Chinese inside_Tibetan inside_Mandarin inside_Burmese inside_Basque","outside":""},
-	{"name":"Ural-Altaic","parent":"Borean","colour":"#ebe378","children":[
-		{"name":"Paleo-Siberian","parent":"Ural-Altaic","colour":"#ebe378","children":[
-			{"name":"Eskimo-Aleutian","parent":"Paleo-Siberian","colour":"#ebe378","children":[],"insideleafs":["Eskimo-Aleutian"],"inside":"inside_Eskimo-Aleutian","outside":""},
-			{"name":"Chukotian","parent":"Paleo-Siberian","colour":"#ebe378","children":[],"insideleafs":["Chukotian"],"inside":"inside_Chukotian","outside":""}
-			],"insideleafs":["Chukotian","Eskimo-Aleutian"],"inside":"inside_Chukotian inside_Eskimo-Aleutian","outside":""},
-		{"name":"Uralic","parent":"Ural-Altaic","colour":"#ebe378","children":[
-			{"name":"Samoyedic","parent":"Uralic","colour":"#ebe378","children":[],"insideleafs":["Samoyedic"],"inside":"inside_Samoyedic","outside":""},
-			{"name":"Finnic","parent":"Uralic","colour":"#ebe378","children":[],"insideleafs":["Finnic"],"inside":"inside_Finnic","outside":""},
-			{"name":"Hungarian","parent":"Uralic","colour":"#ebe378","children":[],"insideleafs":["Hungarian"],"inside":"inside_Hungarian","outside":""}
-			],"insideleafs":["Samoyedic","Finnic","Hungarian"],"inside":"inside_Samoyedic inside_Finnic inside_Hungarian","outside":""},
-		{"name":"Dravidian","parent":"Ural-Altaic","colour":"#ebe378","children":[],"insideleafs":["Dravidian"],"inside":"inside_Dravidian","outside":""},
-		{"name":"Altaic","parent":"Ural-Altaic","colour":"#ebe378","children":[
-			{"name":"Turkic","parent":"Altaic","colour":"#ebe378","children":[
-				{"name":"Oghuz","parent":"Turkic","colour":"#ebe378","children":[],"insideleafs":["Oghuz"],"inside":"inside_Oghuz","outside":""},
-				{"name":"Karluk","parent":"Turkic","colour":"#ebe378","children":[],"insideleafs":["Karluk"],"inside":"inside_Karluk","outside":""},
-				{"name":"Siberian-Turkic","parent":"Turkic","colour":"#ebe378","children":[],"insideleafs":["Siberian-Turkic"],"inside":"inside_Siberian-Turkic","outside":""},
-				{"name":"Kipchak","parent":"Turkic","colour":"#ebe378","children":[],"insideleafs":["Kipchak"],"inside":"inside_Kipchak","outside":""}
-				],"insideleafs":["Kipchak","Karluk","Oghuz","Siberian-Turkic"],"inside":"inside_Kipchak inside_Karluk inside_Oghuz inside_Siberian-Turkic","outside":""},
-			{"name":"Mongolic","parent":"Altaic","colour":"#ebe378","children":[],"insideleafs":["Mongolic"],"inside":"inside_Mongolic","outside":""},
-			{"name":"Tungusic","parent":"Altaic","colour":"#ebe378","children":[],"insideleafs":["Tungusic"],"inside":"inside_Tungusic","outside":""},
-			{"name":"Korean","parent":"Altaic","colour":"#ebe378","children":[],"insideleafs":["Korean"],"inside":"inside_Korean","outside":""},
-			{"name":"Japonic","parent":"Altaic","colour":"#ebe378","children":[],"insideleafs":["Japonic"],"inside":"inside_Japonic","outside":""}
-			],"insideleafs":["Korean","Mongolic","Karluk","Kipchak","Japonic","Oghuz","Siberian-Turkic","Tungusic"],"inside":"inside_Korean inside_Mongolic inside_Karluk inside_Kipchak inside_Japonic inside_Oghuz inside_Siberian-Turkic inside_Tungusic","outside":""}
-		],"insideleafs":["Samoyedic","Korean","Kipchak","Karluk","Mongolic","Finnic","Dravidian","Japonic","Oghuz","Hungarian","Chukotian","Siberian-Turkic","Eskimo-Aleutian","Tungusic"],"inside":"inside_Samoyedic inside_Korean inside_Kipchak inside_Karluk inside_Mongolic inside_Finnic inside_Dravidian inside_Japonic inside_Oghuz inside_Hungarian inside_Chukotian inside_Siberian-Turkic inside_Eskimo-Aleutian inside_Tungusic","outside":""},
-	{"name":"Indo-European","parent":"Borean","colour":"#ebe378","children":[
-		{"name":"Centum","parent":"Indo-European","colour":"#ebe378","children":[
-			{"name":"Celtic","parent":"Centum","colour":"#ebe378","children":[],"insideleafs":["Celtic"],"inside":"inside_Celtic","outside":""},
-			{"name":"Greek","parent":"Centum","colour":"#ebe378","children":[],"insideleafs":["Greek"],"inside":"inside_Greek","outside":""},
-			{"name":"Germanic","parent":"Centum","colour":"#ebe378","children":[
-				{"name":"Dutch","parent":"Germanic","colour":"#ebe378","children":[],"insideleafs":["Dutch"],"inside":"inside_Dutch","outside":""},
-				{"name":"English","parent":"Germanic","colour":"#ebe378","children":[],"insideleafs":["English"],"inside":"inside_English","outside":""},
-				{"name":"Scandinavian","parent":"Germanic","colour":"#ebe378","children":[],"insideleafs":["Scandinavian"],"inside":"inside_Scandinavian","outside":""},
-				{"name":"German","parent":"Germanic","colour":"#ebe378","children":[],"insideleafs":["German"],"inside":"inside_German","outside":""}
-				],"insideleafs":["Scandinavian","German","English","Dutch"],"inside":"inside_Scandinavian inside_German inside_English inside_Dutch","outside":""},
-			{"name":"Romance","parent":"Centum","colour":"#ebe378","children":[
-				{"name":"French","parent":"Romance","colour":"#ebe378","children":[],"insideleafs":["French"],"inside":"inside_French","outside":""},
-				{"name":"Portuguese","parent":"Romance","colour":"#ebe378","children":[],"insideleafs":["Portuguese"],"inside":"inside_Portuguese","outside":""},
-				{"name":"Italian","parent":"Romance","colour":"#ebe378","children":[],"insideleafs":["Italian"],"inside":"inside_Italian","outside":""},
-				{"name":"Spanish","parent":"Romance","colour":"#ebe378","children":[],"insideleafs":["Spanish"],"inside":"inside_Spanish","outside":""},
-				{"name":"Romanian","parent":"Romance","colour":"#ebe378","children":[],"insideleafs":["Romanian"],"inside":"inside_Romanian","outside":""}
-				],"insideleafs":["Spanish","Portuguese","French","Italian","Romanian"],"inside":"inside_Spanish inside_Portuguese inside_French inside_Italian inside_Romanian","outside":""}
-			],"insideleafs":["Scandinavian","Spanish","Portuguese","Greek","French","Celtic","Italian","Romanian","German","Dutch","English"],"inside":"inside_Scandinavian inside_Spanish inside_Portuguese inside_Greek inside_French inside_Celtic inside_Italian inside_Romanian inside_German inside_Dutch inside_English","outside":""},
-		{"name":"Satem","parent":"Indo-European","colour":"#ebe378","children":[
-			{"name":"Armenian","parent":"Satem","colour":"#ebe378","children":[],"insideleafs":["Armenian"],"inside":"inside_Armenian","outside":""},
-			{"name":"Iranian","parent":"Satem","colour":"#ebe378","children":[],"insideleafs":["Iranian"],"inside":"inside_Iranian","outside":""},
-			{"name":"Indo-Aryan","parent":"Satem","colour":"#ebe378","children":[
-				{"name":"South-Indoaryan","parent":"Indo-Aryan","colour":"#ebe378","children":[],"insideleafs":["South-Indoaryan"],"inside":"inside_South-Indoaryan","outside":""},
-				{"name":"Central-Indoaryan","parent":"Indo-Aryan","colour":"#ebe378","children":[],"insideleafs":["Central-Indoaryan"],"inside":"inside_Central-Indoaryan","outside":""},
-				{"name":"North-Indoaryan","parent":"Indo-Aryan","colour":"#ebe378","children":[],"insideleafs":["North-Indoaryan"],"inside":"inside_North-Indoaryan","outside":""},
-				{"name":"West-Indoaryan","parent":"Indo-Aryan","colour":"#ebe378","children":[],"insideleafs":["West-Indoaryan"],"inside":"inside_West-Indoaryan","outside":""},
-				{"name":"Insular-Indoaryan","parent":"Indo-Aryan","colour":"#ebe378","children":[],"insideleafs":["Insular-Indoaryan"],"inside":"inside_Insular-Indoaryan","outside":""},
-				{"name":"East-Indoaryan","parent":"Indo-Aryan","colour":"#ebe378","children":[],"insideleafs":["East-Indoaryan"],"inside":"inside_East-Indoaryan","outside":""}
-				],"insideleafs":["Insular-Indoaryan","South-Indoaryan","West-Indoaryan","North-Indoaryan","Central-Indoaryan","East-Indoaryan"],"inside":"inside_Insular-Indoaryan inside_South-Indoaryan inside_West-Indoaryan inside_North-Indoaryan inside_Central-Indoaryan inside_East-Indoaryan","outside":""},
-			{"name":"Slavic","parent":"Satem","colour":"#ebe378","children":[
-				{"name":"South-Slavic","parent":"Slavic","colour":"#ebe378","children":[],"insideleafs":["South-Slavic"],"inside":"inside_South-Slavic","outside":""},
-				{"name":"East-Slavic","parent":"Slavic","colour":"#ebe378","children":[],"insideleafs":["East-Slavic"],"inside":"inside_East-Slavic","outside":""},
-				{"name":"West-Slavic","parent":"Slavic","colour":"#ebe378","children":[],"insideleafs":["West-Slavic"],"inside":"inside_West-Slavic","outside":""}
-				],"insideleafs":["South-Slavic","West-Slavic","East-Slavic"],"inside":"inside_South-Slavic inside_West-Slavic inside_East-Slavic","outside":""},
-			{"name":"Baltic","parent":"Satem","colour":"#ebe378","children":[],"insideleafs":["Baltic"],"inside":"inside_Baltic","outside":""},
-			{"name":"Albanian","parent":"Satem","colour":"#ebe378","children":[],"insideleafs":["Albanian"],"inside":"inside_Albanian","outside":""}
-			],"insideleafs":["South-Slavic","West-Slavic","Baltic","Insular-Indoaryan","South-Indoaryan","West-Indoaryan","North-Indoaryan","Albanian","Central-Indoaryan","East-Slavic","Armenian","Iranian","East-Indoaryan"],"inside":"inside_South-Slavic inside_West-Slavic inside_Baltic inside_Insular-Indoaryan inside_South-Indoaryan inside_West-Indoaryan inside_North-Indoaryan inside_Albanian inside_Central-Indoaryan inside_East-Slavic inside_Armenian inside_Iranian inside_East-Indoaryan","outside":""}
-		],"insideleafs":["Spanish","South-Slavic","West-Slavic","Insular-Indoaryan","Baltic","French","Celtic","Armenian","Iranian","Dutch","English","East-Indoaryan","Scandinavian","Portuguese","Greek","South-Indoaryan","West-Indoaryan","North-Indoaryan","Central-Indoaryan","Albanian","Italian","East-Slavic","Romanian","German"],"inside":"inside_Spanish inside_South-Slavic inside_West-Slavic inside_Insular-Indoaryan inside_Baltic inside_French inside_Celtic inside_Armenian inside_Iranian inside_Dutch inside_English inside_East-Indoaryan inside_Scandinavian inside_Portuguese inside_Greek inside_South-Indoaryan inside_West-Indoaryan inside_North-Indoaryan inside_Central-Indoaryan inside_Albanian inside_Italian inside_East-Slavic inside_Romanian inside_German","outside":""},
-	{"name":"Afroasiatic","parent":"Borean","colour":"#ebe378","children":[
-		{"name":"Berber","parent":"Afroasiatic","colour":"#ebe378","children":[],"insideleafs":["Berber"],"inside":"inside_Berber","outside":""},
-		{"name":"Chadic","parent":"Afroasiatic","colour":"#ebe378","children":[],"insideleafs":["Chadic"],"inside":"inside_Chadic","outside":""},
-		{"name":"Cushitic","parent":"Afroasiatic","colour":"#ebe378","children":[],"insideleafs":["Cushitic"],"inside":"inside_Cushitic","outside":""},
-		{"name":"Semitic","parent":"Afroasiatic","colour":"#ebe378","children":[
-			{"name":"Arabic","parent":"Semitic","colour":"#ebe378","children":[],"insideleafs":["Arabic"],"inside":"inside_Arabic","outside":""},
-			{"name":"Hebrew","parent":"Semitic","colour":"#ebe378","children":[],"insideleafs":["Hebrew"],"inside":"inside_Hebrew","outside":""}
-			],"insideleafs":["Hebrew","Arabic"],"inside":"inside_Hebrew inside_Arabic","outside":""}
-		],"insideleafs":["Cushitic","Hebrew","Arabic","Berber","Chadic"],"inside":"inside_Cushitic inside_Hebrew inside_Arabic inside_Berber inside_Chadic","outside":""},
-	{"name":"Austric","parent":"Borean","colour":"#ebe378","children":[
-		{"name":"Austronesian","parent":"Austric","colour":"#ebe378","children":[
-			{"name":"Oceanic","parent":"Austronesian","colour":"#ebe378","children":[],"insideleafs":["Oceanic"],"inside":"inside_Oceanic","outside":""},
-			{"name":"Malayo-Polynesian","parent":"Austronesian","colour":"#ebe378","children":[],"insideleafs":["Malayo-Polynesian"],"inside":"inside_Malayo-Polynesian","outside":""}
-			],"insideleafs":["Oceanic","Malayo-Polynesian"],"inside":"inside_Oceanic inside_Malayo-Polynesian","outside":""},
-		{"name":"Tai-Kadai","parent":"Austric","colour":"#ebe378","children":[],"insideleafs":["Tai-Kadai"],"inside":"inside_Tai-Kadai","outside":""},
-		{"name":"Austro-Asiatic","parent":"Austric","colour":"#ebe378","children":[],"insideleafs":["Austro-Asiatic"],"inside":"inside_Austro-Asiatic","outside":""}
-		],"insideleafs":["Tai-Kadai","Oceanic","Malayo-Polynesian","Austro-Asiatic"],"inside":"inside_Tai-Kadai inside_Oceanic inside_Malayo-Polynesian inside_Austro-Asiatic","outside":""}
-	],"insideleafs":["Samoyedic","Finnic","French","Tibetan","Celtic","Oghuz","Hungarian","Korean","South-Indoaryan","Central-Indoaryan","Tai-Kadai","Karluk","South-Chinese","Burmese","Armenian","Portuguese","Arabic","Greek","Oceanic","Berber","North-Indoaryan","Austro-Asiatic","Tungusic","South-Slavic","Baltic","Dravidian","Siberian-Turkic","Caucasian","West-Indoaryan","Mandarin","Albanian","Italian","East-Slavic","Eskimo-Aleutian","Spanish","Hebrew","West-Slavic","Mongolic","Insular-Indoaryan","Japonic","Chadic","Basque","Iranian","Dutch","English","East-Indoaryan","Cushitic","Scandinavian","Kipchak","Malayo-Polynesian","Romanian","Chukotian","German"],"inside":"inside_Samoyedic inside_Finnic inside_French inside_Tibetan inside_Celtic inside_Oghuz inside_Hungarian inside_Korean inside_South-Indoaryan inside_Central-Indoaryan inside_Tai-Kadai inside_Karluk inside_South-Chinese inside_Burmese inside_Armenian inside_Portuguese inside_Arabic inside_Greek inside_Oceanic inside_Berber inside_North-Indoaryan inside_Austro-Asiatic inside_Tungusic inside_South-Slavic inside_Baltic inside_Dravidian inside_Siberian-Turkic inside_Caucasian inside_West-Indoaryan inside_Mandarin inside_Albanian inside_Italian inside_East-Slavic inside_Eskimo-Aleutian inside_Spanish inside_Hebrew inside_West-Slavic inside_Mongolic inside_Insular-Indoaryan inside_Japonic inside_Chadic inside_Basque inside_Iranian inside_Dutch inside_English inside_East-Indoaryan inside_Cushitic inside_Scandinavian inside_Kipchak inside_Malayo-Polynesian inside_Romanian inside_Chukotian inside_German","outside":""},
+{"name":"Borean","parent":"Mothertongue","children":[
+	{"name":"Sino-Caucasian","parent":"Borean","children":[
+		{"name":"Caucasian","parent":"Sino-Caucasian","children":[]},
+		{"name":"Basque","parent":"Sino-Caucasian","children":[]},
+		{"name":"Sino-Tibetan","parent":"Sino-Caucasian","children":[
+			{"name":"Sinitic","parent":"Sino-Tibetan","children":[
+				{"name":"South-Chinese","parent":"Sinitic","children":[]},
+				{"name":"Mandarin","parent":"Sinitic","children":[]}
+				]},
+			{"name":"Tibeto-Burman","parent":"Sino-Tibetan","children":[
+				{"name":"Tibetan","parent":"Tibeto-Burman","children":[]},
+				{"name":"Burmese","parent":"Tibeto-Burman","children":[]}
+				]}
+			]}
+		]},
+	{"name":"Ural-Altaic","parent":"Borean","children":[
+		{"name":"Dravidian","parent":"Ural-Altaic","children":[]},
+		{"name":"Paleo-Siberian","parent":"Ural-Altaic","children":[
+			{"name":"Eskimo-Aleutian","parent":"Paleo-Siberian","children":[]},
+			{"name":"Chukotian","parent":"Paleo-Siberian","children":[]}
+			]},
+		{"name":"Altaic","parent":"Ural-Altaic","children":[
+			{"name":"Korean","parent":"Altaic","children":[]},
+			{"name":"Japonic","parent":"Altaic","children":[]},
+			{"name":"Turkic","parent":"Altaic","children":[
+				{"name":"Oghuz","parent":"Turkic","children":[]},
+				{"name":"Karluk","parent":"Turkic","children":[]},
+				{"name":"Kipchak","parent":"Turkic","children":[]},
+				{"name":"Siberian-Turkic","parent":"Turkic","children":[]}
+				]},
+			{"name":"Tungusic","parent":"Altaic","children":[]},
+			{"name":"Mongolic","parent":"Altaic","children":[]}
+			]},
+		{"name":"Uralic","parent":"Ural-Altaic","children":[
+			{"name":"Samoyedic","parent":"Uralic","children":[]},
+			{"name":"Finnic","parent":"Uralic","children":[]},
+			{"name":"Hungarian","parent":"Uralic","children":[]}
+			]}
+		]},
+	{"name":"Indo-European","parent":"Borean","children":[
+		{"name":"Centum","parent":"Indo-European","children":[
+			{"name":"Greek","parent":"Centum","children":[]},
+			{"name":"Celtic","parent":"Centum","children":[]},
+			{"name":"Germanic","parent":"Centum","children":[
+				{"name":"Scandinavian","parent":"Germanic","children":[]},
+				{"name":"German","parent":"Germanic","children":[]},
+				{"name":"Dutch","parent":"Germanic","children":[]},
+				{"name":"English","parent":"Germanic","children":[]}
+				]},
+			{"name":"Romance","parent":"Centum","children":[
+				{"name":"French","parent":"Romance","children":[]},
+				{"name":"Italian","parent":"Romance","children":[]},
+				{"name":"Spanish","parent":"Romance","children":[]},
+				{"name":"Portuguese","parent":"Romance","children":[]},
+				{"name":"Romanian","parent":"Romance","children":[]}
+				]}
+			]},
+		{"name":"Satem","parent":"Indo-European","children":[
+			{"name":"Slavic","parent":"Satem","children":[
+				{"name":"West-Slavic","parent":"Slavic","children":[]},
+				{"name":"South-Slavic","parent":"Slavic","children":[]},
+				{"name":"East-Slavic","parent":"Slavic","children":[]}
+				]},
+			{"name":"Baltic","parent":"Satem","children":[]},
+			{"name":"Albanian","parent":"Satem","children":[]},
+			{"name":"Armenian","parent":"Satem","children":[]},
+			{"name":"Iranian","parent":"Satem","children":[]},
+			{"name":"Indo-Aryan","parent":"Satem","children":[
+				{"name":"South-Indoaryan","parent":"Indo-Aryan","children":[]},
+				{"name":"Central-Indoaryan","parent":"Indo-Aryan","children":[]},
+				{"name":"North-Indoaryan","parent":"Indo-Aryan","children":[]},
+				{"name":"West-Indoaryan","parent":"Indo-Aryan","children":[]},
+				{"name":"Insular-Indoaryan","parent":"Indo-Aryan","children":[]},
+				{"name":"East-Indoaryan","parent":"Indo-Aryan","children":[]}
+				]}
+			]}
+		]},
+	{"name":"Afroasiatic","parent":"Borean","children":[
+		{"name":"Berber","parent":"Afroasiatic","children":[]},
+		{"name":"Chadic","parent":"Afroasiatic","children":[]},
+		{"name":"Cushitic","parent":"Afroasiatic","children":[]},
+		{"name":"Semitic","parent":"Afroasiatic","children":[
+			{"name":"Arabic","parent":"Semitic","children":[]},
+			{"name":"Hebrew","parent":"Semitic","children":[]}
+			]}
+		]},
+	{"name":"Austric","parent":"Borean","children":[
+		{"name":"Austronesian","parent":"Austric","children":[
+			{"name":"Oceanic","parent":"Austronesian","children":[]},
+			{"name":"Malayo-Polynesian","parent":"Austronesian","children":[]}
+			]},
+		{"name":"Tai-Kadai","parent":"Austric","children":[]},
+		{"name":"Austro-Asiatic","parent":"Austric","children":[]}
+		]}
+	]},
 
-{"name":"Creole","parent":"Mothertongue","colour":"#ebe378","children":[],"insideleafs":["Creole"],"inside":"inside_Creole","outside":""}
+{"name":"Creole","parent":"Mothertongue","children":[]}
 
 ]

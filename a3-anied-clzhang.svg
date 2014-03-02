@@ -13,8 +13,7 @@
    viewBox="82.992 45.607 2528.5721 1428.3294"
    width="863.21002"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="a3-anied-clzhang.svg"
-   class="MapContainer">
+   sodipodi:docname="a3-anied-clzhang.svg">
   <metadata
      id="metadata2990">
     <rdf:RDF>
@@ -39,13 +38,13 @@
      inkscape:window-height="780"
      id="namedview2988"
      showgrid="false"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="626.57186"
-     inkscape:cy="280.73113"
+     inkscape:zoom="63.999999"
+     inkscape:cx="687.73382"
+     inkscape:cy="284.98016"
      inkscape:window-x="663"
      inkscape:window-y="39"
      inkscape:window-maximized="0"
-     inkscape:current-layer="tw"
+     inkscape:current-layer="Asia"
      showguides="true"
      inkscape:guide-bbox="true" />
   <title
@@ -7609,7 +7608,8 @@
          sodipodi:cx="1534.2589"
          sodipodi:cy="483.44797"
          sodipodi:rx="6.0130301"
-         sodipodi:ry="6.0130301" />
+         sodipodi:ry="6.0130301"
+         style="display:none" />
     </g>
     <g
        id="cy">
@@ -9500,7 +9500,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       class="South-Chinese zone landxx coastxx tw"
+       class="landxx coastxx tw"
        id="tw"
        transform="translate(-29.9017,-45.0745)">
       <title
