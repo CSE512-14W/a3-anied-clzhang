@@ -60,8 +60,8 @@
 				{"name":"Kipchak","parent":"Turkic","children":[]},
 				{"name":"Siberian-Turkic","parent":"Turkic","children":[]}
 				]},
-			{"name":"Tungusic","parent":"Altaic","children":[]},
-			{"name":"Mongolic","parent":"Altaic","children":[]}
+			{"name":"Mongolic","parent":"Altaic","children":[]},
+			{"name":"Tungusic","parent":"Altaic","children":[]}
 			]},
 		{"name":"Uralic","parent":"Ural-Altaic","children":[
 			{"name":"Samoyedic","parent":"Uralic","children":[]},
