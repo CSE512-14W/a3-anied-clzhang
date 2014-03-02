@@ -18,9 +18,9 @@ Aymara,South-American,,,,,,,3,Aymara South-American Amerindian Mothertongue
 Mapudungun,South-American,,,,,,,3,Mapudungun South-American Amerindian Mothertongue   
 Borean,Mothertongue,Afroasiatic,Indo-European,Ural-Altaic,Sino-Caucasian,Austric,,1,Borean Mothertongue    
 Afroasiatic,Borean,Semitic,Berber,Chadic,Cushitic,,,2,Afroasiatic Borean Mothertongue   
-Semitic,Afroasiatic,Arabic,Jewish,,,,,3,Semitic Afroasiatic Borean Mothertongue  
+Semitic,Afroasiatic,Arabic,Hebrew,,,,,3,Semitic Afroasiatic Borean Mothertongue  
 Arabic,Semitic,,,,,,,4,Arabic Semitic Afroasiatic Borean Mothertongue
-Jewish,Semitic,,,,,,,4,Other-Semitic Semitic Afroasiatic Borean Mothertongue
+Hebrew,Semitic,,,,,,,4,Other-Semitic Semitic Afroasiatic Borean Mothertongue
 Berber,Afroasiatic,,,,,,,3,Berber Afroasiatic Borean Mothertongue  
 Chadic,Afroasiatic,,,,,,,3,Chadic Afroasiatic Borean Mothertongue  
 Cushitic,Afroasiatic,,,,,,,3,Cushitic Afroasiatic Borean Mothertongue  
@@ -70,9 +70,9 @@ Uralic,Ural-Altaic,Finnic,Hungarian,Samoyedic,,,,3,Uralic Ural-Altaic Borean Mot
 Finnic,Uralic,,,,,,,4,Finnic Uralic Ural-Altaic Borean Mothertongue  
 Hungarian,Uralic,,,,,,,4,Hungarian Uralic Ural-Altaic Borean Mothertongue  
 Samoyedic,Uralic,,,,,,,4,Samoyedic Uralic Ural-Altaic Borean Mothertongue  
-Paleo-Siberian,Ural-Altaic,Chukotian,Aleutian,,,,,3,Paleo-Siberian Ural-Altaic Borean Mothertongue  
+Paleo-Siberian,Ural-Altaic,Chukotian,Eskimo-Aleutian,,,,,3,Paleo-Siberian Ural-Altaic Borean Mothertongue  
 Chukotian,Paleo-Siberian,,,,,,,4,Chukotian Paleo-Siberian Ural-Altaic Borean Mothertongue 
-Aleutian,Paleo-Siberian,,,,,,,4,Aleutian Paleo-Siberian Ural-Altaic Borean Mothertongue 
+Eskimo-Aleutian,Paleo-Siberian,,,,,,,4,Eskimo-Aleutian Paleo-Siberian Ural-Altaic Borean Mothertongue 
 Dravidian,Ural-Altaic,,,,,,,3,Dravidian Ural-Altaic Borean Mothertongue  
 Sino-Caucasian,Borean,Sino-Tibetan,Caucasian,Basque,,,,2,Sino-Caucasian Borean Mothertongue   
 Sino-Tibetan,Sino-Caucasian,Sinitic,Tibeto-Burman,,,,,3,Sino-Tibetan Sino-Caucasian Borean Mothertongue  
@@ -90,8 +90,8 @@ Austro-Asiatic,Austric,,,,,,,3,Austro-Asiatic Austric Borean Mothertongue
 Austronesian,Austric,Malayo-Polynesian,Oceanic,,,,,3,Austronesian Austric Borean Mothertongue  
 Malayo-Polynesian,Austronesian,,,,,,,4,Malayo-Polynesian Austronesian Austric Borean Mothertongue  
 Oceanic,Austronesian,,,,,,,4,Oceanic Austronesian Austric Borean Mothertongue  
-Paleo-Melanesian,Mothertongue,Papuan,Aboriginial,Melanesian,,,,1,Paleo-Melanesian Mothertongue    
-Aboriginial,Paleo-Melanesian,,,,,,,2,Aboriginial Paleo-Melanesian Mothertongue   
+Paleo-Melanesian,Mothertongue,Papuan,Aboriginal,Melanesian,,,,1,Paleo-Melanesian Mothertongue    
+Aboriginal,Paleo-Melanesian,,,,,,,2,Aboriginal Paleo-Melanesian Mothertongue   
 Papuan,Paleo-Melanesian,,,,,,,2,Papuan Paleo-Melanesian Mothertongue   
 Melanesian,Paleo-Melanesian,,,,,,,2,Melanesian Paleo-Melanesian Mothertongue   
 Creole,Mothertongue,,,,,,,1,Creole Mothertongue

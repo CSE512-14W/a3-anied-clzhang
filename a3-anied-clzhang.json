@@ -2,9 +2,9 @@
 
 {"name":"Paleo-Melanesian","parent":"Mothertongue","colour":"#ebe378","children":[
 	{"name":"Papuan","parent":"Paleo-Melanesian","colour":"#ebe378","children":[],"insideleafs":["Papuan"],"inside":"inside_Papuan","outside":""},
-	{"name":"Aboriginial","parent":"Paleo-Melanesian","colour":"#ebe378","children":[],"insideleafs":["Aboriginial"],"inside":"inside_Aboriginial","outside":""},
+	{"name":"Aboriginal","parent":"Paleo-Melanesian","colour":"#ebe378","children":[],"insideleafs":["Aboriginal"],"inside":"inside_Aboriginal","outside":""},
 	{"name":"Melanesian","parent":"Paleo-Melanesian","colour":"#ebe378","children":[],"insideleafs":["Melanesian"],"inside":"inside_Melanesian","outside":""}
-	],"insideleafs":["Papuan","Melanesian","Aboriginial"],"inside":"inside_Papuan inside_Melanesian inside_Aboriginial","outside":""},
+	],"insideleafs":["Papuan","Melanesian","Aboriginal"],"inside":"inside_Papuan inside_Melanesian inside_Aboriginal","outside":""},
 
 {"name":"African","parent":"Mothertongue","colour":"#ebe378","children":[
 	{"name":"Niger-Congo","parent":"African","colour":"#ebe378","children":[
@@ -47,9 +47,9 @@
 		],"insideleafs":["Caucasian","South-Chinese","Tibetan","Mandarin","Burmese","Basque"],"inside":"inside_Caucasian inside_South-Chinese inside_Tibetan inside_Mandarin inside_Burmese inside_Basque","outside":""},
 	{"name":"Ural-Altaic","parent":"Borean","colour":"#ebe378","children":[
 		{"name":"Paleo-Siberian","parent":"Ural-Altaic","colour":"#ebe378","children":[
-			{"name":"Aleutian","parent":"Paleo-Siberian","colour":"#ebe378","children":[],"insideleafs":["Aleutian"],"inside":"inside_Aleutian","outside":""},
+			{"name":"Eskimo-Aleutian","parent":"Paleo-Siberian","colour":"#ebe378","children":[],"insideleafs":["Eskimo-Aleutian"],"inside":"inside_Eskimo-Aleutian","outside":""},
 			{"name":"Chukotian","parent":"Paleo-Siberian","colour":"#ebe378","children":[],"insideleafs":["Chukotian"],"inside":"inside_Chukotian","outside":""}
-			],"insideleafs":["Chukotian","Aleutian"],"inside":"inside_Chukotian inside_Aleutian","outside":""},
+			],"insideleafs":["Chukotian","Eskimo-Aleutian"],"inside":"inside_Chukotian inside_Eskimo-Aleutian","outside":""},
 		{"name":"Uralic","parent":"Ural-Altaic","colour":"#ebe378","children":[
 			{"name":"Samoyedic","parent":"Uralic","colour":"#ebe378","children":[],"insideleafs":["Samoyedic"],"inside":"inside_Samoyedic","outside":""},
 			{"name":"Finnic","parent":"Uralic","colour":"#ebe378","children":[],"insideleafs":["Finnic"],"inside":"inside_Finnic","outside":""},
@@ -68,7 +68,7 @@
 			{"name":"Korean","parent":"Altaic","colour":"#ebe378","children":[],"insideleafs":["Korean"],"inside":"inside_Korean","outside":""},
 			{"name":"Japonic","parent":"Altaic","colour":"#ebe378","children":[],"insideleafs":["Japonic"],"inside":"inside_Japonic","outside":""}
 			],"insideleafs":["Korean","Mongolic","Karluk","Kipchak","Japonic","Oghuz","Siberian-Turkic","Tungusic"],"inside":"inside_Korean inside_Mongolic inside_Karluk inside_Kipchak inside_Japonic inside_Oghuz inside_Siberian-Turkic inside_Tungusic","outside":""}
-		],"insideleafs":["Samoyedic","Korean","Kipchak","Karluk","Mongolic","Finnic","Dravidian","Japonic","Oghuz","Hungarian","Chukotian","Siberian-Turkic","Aleutian","Tungusic"],"inside":"inside_Samoyedic inside_Korean inside_Kipchak inside_Karluk inside_Mongolic inside_Finnic inside_Dravidian inside_Japonic inside_Oghuz inside_Hungarian inside_Chukotian inside_Siberian-Turkic inside_Aleutian inside_Tungusic","outside":""},
+		],"insideleafs":["Samoyedic","Korean","Kipchak","Karluk","Mongolic","Finnic","Dravidian","Japonic","Oghuz","Hungarian","Chukotian","Siberian-Turkic","Eskimo-Aleutian","Tungusic"],"inside":"inside_Samoyedic inside_Korean inside_Kipchak inside_Karluk inside_Mongolic inside_Finnic inside_Dravidian inside_Japonic inside_Oghuz inside_Hungarian inside_Chukotian inside_Siberian-Turkic inside_Eskimo-Aleutian inside_Tungusic","outside":""},
 	{"name":"Indo-European","parent":"Borean","colour":"#ebe378","children":[
 		{"name":"Centum","parent":"Indo-European","colour":"#ebe378","children":[
 			{"name":"Celtic","parent":"Centum","colour":"#ebe378","children":[],"insideleafs":["Celtic"],"inside":"inside_Celtic","outside":""},
@@ -113,9 +113,9 @@
 		{"name":"Cushitic","parent":"Afroasiatic","colour":"#ebe378","children":[],"insideleafs":["Cushitic"],"inside":"inside_Cushitic","outside":""},
 		{"name":"Semitic","parent":"Afroasiatic","colour":"#ebe378","children":[
 			{"name":"Arabic","parent":"Semitic","colour":"#ebe378","children":[],"insideleafs":["Arabic"],"inside":"inside_Arabic","outside":""},
-			{"name":"Jewish","parent":"Semitic","colour":"#ebe378","children":[],"insideleafs":["Jewish"],"inside":"inside_Jewish","outside":""}
-			],"insideleafs":["Jewish","Arabic"],"inside":"inside_Jewish inside_Arabic","outside":""}
-		],"insideleafs":["Cushitic","Jewish","Arabic","Berber","Chadic"],"inside":"inside_Cushitic inside_Jewish inside_Arabic inside_Berber inside_Chadic","outside":""},
+			{"name":"Hebrew","parent":"Semitic","colour":"#ebe378","children":[],"insideleafs":["Hebrew"],"inside":"inside_Hebrew","outside":""}
+			],"insideleafs":["Hebrew","Arabic"],"inside":"inside_Hebrew inside_Arabic","outside":""}
+		],"insideleafs":["Cushitic","Hebrew","Arabic","Berber","Chadic"],"inside":"inside_Cushitic inside_Hebrew inside_Arabic inside_Berber inside_Chadic","outside":""},
 	{"name":"Austric","parent":"Borean","colour":"#ebe378","children":[
 		{"name":"Austronesian","parent":"Austric","colour":"#ebe378","children":[
 			{"name":"Oceanic","parent":"Austronesian","colour":"#ebe378","children":[],"insideleafs":["Oceanic"],"inside":"inside_Oceanic","outside":""},
@@ -124,7 +124,7 @@
 		{"name":"Tai-Kadai","parent":"Austric","colour":"#ebe378","children":[],"insideleafs":["Tai-Kadai"],"inside":"inside_Tai-Kadai","outside":""},
 		{"name":"Austro-Asiatic","parent":"Austric","colour":"#ebe378","children":[],"insideleafs":["Austro-Asiatic"],"inside":"inside_Austro-Asiatic","outside":""}
 		],"insideleafs":["Tai-Kadai","Oceanic","Malayo-Polynesian","Austro-Asiatic"],"inside":"inside_Tai-Kadai inside_Oceanic inside_Malayo-Polynesian inside_Austro-Asiatic","outside":""}
-	],"insideleafs":["Samoyedic","Finnic","French","Tibetan","Celtic","Oghuz","Hungarian","Korean","South-Indoaryan","Central-Indoaryan","Tai-Kadai","Karluk","South-Chinese","Burmese","Armenian","Portuguese","Arabic","Greek","Oceanic","Berber","North-Indoaryan","Austro-Asiatic","Tungusic","South-Slavic","Baltic","Dravidian","Siberian-Turkic","Caucasian","West-Indoaryan","Mandarin","Albanian","Italian","East-Slavic","Aleutian","Spanish","Jewish","West-Slavic","Mongolic","Insular-Indoaryan","Japonic","Chadic","Basque","Iranian","Dutch","English","East-Indoaryan","Cushitic","Scandinavian","Kipchak","Malayo-Polynesian","Romanian","Chukotian","German"],"inside":"inside_Samoyedic inside_Finnic inside_French inside_Tibetan inside_Celtic inside_Oghuz inside_Hungarian inside_Korean inside_South-Indoaryan inside_Central-Indoaryan inside_Tai-Kadai inside_Karluk inside_South-Chinese inside_Burmese inside_Armenian inside_Portuguese inside_Arabic inside_Greek inside_Oceanic inside_Berber inside_North-Indoaryan inside_Austro-Asiatic inside_Tungusic inside_South-Slavic inside_Baltic inside_Dravidian inside_Siberian-Turkic inside_Caucasian inside_West-Indoaryan inside_Mandarin inside_Albanian inside_Italian inside_East-Slavic inside_Aleutian inside_Spanish inside_Jewish inside_West-Slavic inside_Mongolic inside_Insular-Indoaryan inside_Japonic inside_Chadic inside_Basque inside_Iranian inside_Dutch inside_English inside_East-Indoaryan inside_Cushitic inside_Scandinavian inside_Kipchak inside_Malayo-Polynesian inside_Romanian inside_Chukotian inside_German","outside":""},
+	],"insideleafs":["Samoyedic","Finnic","French","Tibetan","Celtic","Oghuz","Hungarian","Korean","South-Indoaryan","Central-Indoaryan","Tai-Kadai","Karluk","South-Chinese","Burmese","Armenian","Portuguese","Arabic","Greek","Oceanic","Berber","North-Indoaryan","Austro-Asiatic","Tungusic","South-Slavic","Baltic","Dravidian","Siberian-Turkic","Caucasian","West-Indoaryan","Mandarin","Albanian","Italian","East-Slavic","Eskimo-Aleutian","Spanish","Hebrew","West-Slavic","Mongolic","Insular-Indoaryan","Japonic","Chadic","Basque","Iranian","Dutch","English","East-Indoaryan","Cushitic","Scandinavian","Kipchak","Malayo-Polynesian","Romanian","Chukotian","German"],"inside":"inside_Samoyedic inside_Finnic inside_French inside_Tibetan inside_Celtic inside_Oghuz inside_Hungarian inside_Korean inside_South-Indoaryan inside_Central-Indoaryan inside_Tai-Kadai inside_Karluk inside_South-Chinese inside_Burmese inside_Armenian inside_Portuguese inside_Arabic inside_Greek inside_Oceanic inside_Berber inside_North-Indoaryan inside_Austro-Asiatic inside_Tungusic inside_South-Slavic inside_Baltic inside_Dravidian inside_Siberian-Turkic inside_Caucasian inside_West-Indoaryan inside_Mandarin inside_Albanian inside_Italian inside_East-Slavic inside_Eskimo-Aleutian inside_Spanish inside_Hebrew inside_West-Slavic inside_Mongolic inside_Insular-Indoaryan inside_Japonic inside_Chadic inside_Basque inside_Iranian inside_Dutch inside_English inside_East-Indoaryan inside_Cushitic inside_Scandinavian inside_Kipchak inside_Malayo-Polynesian inside_Romanian inside_Chukotian inside_German","outside":""},
 
 {"name":"Creole","parent":"Mothertongue","colour":"#ebe378","children":[],"insideleafs":["Creole"],"inside":"inside_Creole","outside":""}
 
